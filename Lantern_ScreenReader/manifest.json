@@ -1,0 +1,78 @@
+{
+  "name": "Lantern",
+  "version": "1.0",
+  "description": "An accessibility Chrome extension that navigates web pages using the semantic web",
+  "permissions": ["activeTab",
+    "declarativeContent",
+    "storage",
+    "tts"],
+  "commands": {
+    "first": {
+      "suggested_key": {
+        "default": "Ctrl+1"
+      },
+      "description": "First element"
+    },
+
+    "second": {
+      "suggested_key": {
+        "default": "Ctrl+2"
+      },
+      "description": "Second element"
+    },
+
+    "third": {
+      "description": "Third element"
+    },
+
+    "fourth": {
+      "description": "Fourth element"
+    },
+
+    "more": {
+      "description": "More"
+    },
+
+    "previous": {
+      "suggested_key": {
+        "default": "Ctrl+Up"
+      },
+      "description": "Previous menu"
+    },
+
+    "repeat": {
+      "suggested_key": {
+        "default": "Ctrl+Space"
+      },
+      "description": "Reads menu"
+    }
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["ab.js"]
+    }
+  ],
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/get_started16.png",
+      "32": "images/get_started32.png",
+      "48": "images/get_started48.png",
+      "128": "images/get_started128.png"
+    }
+  },
+  "icons": {
+    "16": "images/get_started16.png",
+    "32": "images/get_started32.png",
+    "48": "images/get_started48.png",
+    "128": "images/get_started128.png"
+  },
+  "manifest_version": 2
+}

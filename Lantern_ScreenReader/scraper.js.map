@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "scraper.js",
+  "sourceRoot": "",
+  "sources": [
+    "scraper.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,IAAA,CAAA,EAAA,OAAA,EAAA,OAAA,EAAA,QAAA,EAAA,CAAA,EAAA,MAAA,EAAA,GAAA,EAAA,GAAA,EAAA,IAAA,EAAA,IAAA,EAAA,IAAA,EAAA;;AACA,OAAA;;AACA,OAAO,gBAAP,MAAA;;AACA,MAAA,GAAS,OAAA,CAAQ,QAAR,EAHT;;;AAMA,OAAO,CAAC,GAAR,CAAY,MAAZ;;AAEA,GAAA,GAAM;;AACN,OAAA,GAAU;;AACV,MAAM,CAAC,iBAAP,CAAyB,WAAzB,EAAsC,gBAAtC;;AACA,MAAM,CAAC,OAAP,CAAe,GAAf,EAAoB;EAAC,MAAA,EAAQ;AAAT,CAApB,EAA2C,QAAA,CAAC,GAAD,EAAM,IAAN,CAAA;SACzC,OAAA,GAAU;AAD+B,CAA3C;;AAGA,QAAA,GAAW,CAAA;;AACX,IAAA,GAAO;;AACP,KAAA,yCAAA;uBAAA;;EAEE,IAAG,IAAA,KAAQ,CAAX;IACE,IAAA,GAAO;AACP,aAFF;;EAIA,IAAA,GAAO,UAAA,CAAW,OAAX;EACP,IAAO,YAAP;AACE,aADF;;EAGA,CAAA,GAAI,CAAC,IAAD,EAAO,CAAP;EACJ,QAAS,CAAA,IAAI,CAAC,EAAL,CAAT,GAAoB;AAXtB,CAhBA;;;AA8BA,KAAA,eAAA;EACE,OAAA,GAAU,QAAS,CAAA,GAAA,CAAK,CAAA,CAAA;EACxB,OAAO,CAAC,WAAR,CAAoB,QAApB;AAFF;;AAIA,IAAA,GAAO,IAAI,IAAJ,CAAS,QAAT;;AACP,QAAA,GACE;EAAA,QAAA,EAAU,IAAI,CAAC,QAAf;EACA,KAAA,EAAO,CADP;EAEA,aAAA,EAAe;AAFf;;AAIF,MAAM,CAAC,OAAO,CAAC,KAAK,CAAC,GAArB,CAAyB;EAAC,IAAA,EAAM;AAAP,CAAzB",
+  "sourcesContent": [
+    "#todo test this\r\nimport 'elements'\r\nimport jsonldRdfaParser from 'jsonld-rdfa-parser'\r\njsonld = require 'jsonld' #todo maybe use required everywhere\r\n#jsonldRdfaParser = require 'jsonld-rdfa-parser'\r\n\r\nconsole.log 'here'\r\n\r\nsrc = 'C:\\\\Users\\\\Kanan-PC\\\\Desktop\\\\Lantern\\\\Example\\\\Example2.html'\r\ncontent = null\r\njsonld.registerRDFParser 'text/html', jsonldRdfaParser\r\njsonld.fromRDF src, {format: 'text/html'}, (err, data) ->\r\n  content = data\r\n\r\nelements = {}\r\nmark = 0\r\nfor element in content\r\n#Skip declarations\r\n  if mark == 0\r\n    mark = 1\r\n    continue\r\n\r\n  node = addElement(element)\r\n  if not node?\r\n    continue\r\n\r\n  a = [node, 0]\r\n  elements[node.id] = a\r\n\r\n#elements = {id: [node, 0]...}\r\nfor key of elements\r\n  element = elements[key][0]\r\n  element.addChildren(elements)\r\n\r\nroot = new tree(elements)\r\nelements =\r\n  elements: root.children,\r\n  index: 0,\r\n  notifications: []\r\n\r\nchrome.storage.local.set {test: elements}"
+  ]
+}

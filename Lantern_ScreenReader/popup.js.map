@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "popup.js",
+  "sourceRoot": "",
+  "sources": [
+    "popup.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA;AAAA,MAAA;;EAEA,WAAA,GAAc,QAAQ,CAAC,cAAT,CAAwB,aAAxB,EAFd;;;;EAMA,MAAM,CAAC,OAAO,CAAC,IAAI,CAAC,GAApB,CAAwB,OAAxB,EAAiC,QAAA,CAAC,IAAD,CAAA;IAC/B,WAAW,CAAC,KAAK,CAAC,eAAlB,GAAoC,IAAI,CAAC,MAAzC;;WAEA,WAAW,CAAC,YAAZ,CAAyB,OAAzB,EAAkC,IAAI,CAAC,KAAvC;EAH+B,CAAjC;;EAKA,WAAW,CAAC,OAAZ,GAAsB,QAAA,CAAC,OAAD,CAAA;AACpB,QAAA;IAAA,KAAA,GAAQ,OAAO,CAAC,MAAM,CAAC;WACvB,MAAM,CAAC,IAAI,CAAC,KAAZ,CAAkB;MAAC,MAAA,EAAQ,IAAT;MAAe,aAAA,EAAe;IAA9B,CAAlB,EAAuD,QAAA,CAAC,IAAD,CAAA;aACrD,MAAM,CAAC,IAAI,CAAC,aAAZ,CAA0B,IAAK,CAAA,CAAA,CAAE,CAAC,EAAlC,EAAsC;QAAC,IAAA,EAAM,yCAAA,GAA4C,KAA5C,GAAoD;MAA3D,CAAtC;IADqD,CAAvD;EAFoB;AAXtB",
+  "sourcesContent": [
+    "#popups, contentscripts and background can interact with eachother by sending messages and setting storage\r\n\r\nchangeColor = document.getElementById('changeColor')\r\n\r\n#data becomes an object with keys as properties\r\n#after we get the storage 'color', we call a function\r\nchrome.storage.sync.get 'color', (data) ->\r\n  changeColor.style.backgroundColor = data.color\r\n  #This sets up an attribute called value, used below\r\n  changeColor.setAttribute 'value', data.color\r\n\r\nchangeColor.onclick = (element) ->\r\n  color = element.target.value\r\n  chrome.tabs.query {active: true, currentWindow: true}, (tabs) ->\r\n    chrome.tabs.executeScript tabs[0].id, {code: 'document.body.style.backgroundColor = \"' + color + '\";'}\r\n"
+  ]
+}

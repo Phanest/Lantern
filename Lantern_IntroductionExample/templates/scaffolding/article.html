@@ -1,0 +1,9 @@
+<h2 class="card-header" property="name">
+    {% block header %}
+    {% endblock %}
+</h2>
+<div class="card-body" property="contains" resource={% block articlePath %}""{% endblock %}
+     typeof={% block type %}""{% endblock %}>
+    {% block body %}
+    {% endblock %}
+</div>

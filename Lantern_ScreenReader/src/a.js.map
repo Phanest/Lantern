@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "a.js",
+  "sourceRoot": "",
+  "sources": [
+    "a.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,OAAA,EAAA,MAAA,EAAA,gBAAA,EAAA;;EAAA,MAAA,GAAS,OAAA,CAAQ,wBAAR;;EACT,gBAAA,GAAmB,OAAA,CAAQ,oCAAR;;EAEnB,OAAO,CAAC,GAAR,CAAY,kBAAZ;;EAEA,GAAA,GAAM,QAAQ,CAAC;;EACf,OAAA,GAAU;;EACV,MAAM,CAAC,iBAAP,CAAyB,WAAzB,EAAsC,gBAAtC;;EACA,MAAM,CAAC,OAAP,CAAe,GAAf,EAAoB;IAAC,MAAA,EAAQ;EAAT,CAApB,EAA2C,QAAA,CAAC,GAAD,EAAM,IAAN,CAAA;IACzC,OAAA,GAAU;IACV,OAAO,CAAC,GAAR,CAAY,IAAZ;IACA,MAAM,CAAC,OAAO,CAAC,WAAf,CAA2B;MAAC,IAAA,EAAM;IAAP,CAA3B;WAEA,OAAO,CAAC,GAAR,CAAY,cAAZ;EALyC,CAA3C;AARA",
+  "sourcesContent": [
+    "jsonld = require('../node_modules/jsonld')\r\njsonldRdfaParser = require('../node_modules/jsonld-rdfa-parser')\r\n\r\nconsole.log 'here in b.coffee'\r\n\r\nsrc = document.body\r\ncontent = null\r\njsonld.registerRDFParser 'text/html', jsonldRdfaParser\r\njsonld.fromRDF src, {format: 'text/html'}, (err, data) ->\r\n  content = data\r\n  console.log data\r\n  chrome.runtime.sendMessage {test: content}\r\n\r\n  console.log 'message sent'"
+  ]
+}

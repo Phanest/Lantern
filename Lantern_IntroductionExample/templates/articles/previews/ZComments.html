@@ -1,0 +1,43 @@
+<h2 class="card-header" property="name">
+    Article with comments
+</h2>
+<div class="card-body" property="contains" resource="Image" typeof="section">
+    <meta property="name" content="Article with image">
+
+    <div property="contains" resource="ImageFilm" typeof="text">
+        <meta property="name" content="Figure 1">
+        <meta property="content" content="An image of the two main characters in a sea of golden dragons">
+        <img src="media/Film.jpg">
+    </div>
+
+    <div property="contains" resource="HowToTrainYourDragon" typeof="text">
+        <meta property="name" content="Article about film">
+        <p property="content">
+            Over the course of the 15 years between Toy Story and Toy Story 3, Pixar Animation Studios underwent a monumental evolution from a computer firm taking its first steps into animation to an industry-changing powerhouse.
+            Over the nine years between How to Train Your Dragon and the new trilogy-capper How to Train Your Dragon: The Hidden World, DreamWorks Animation went through a much more troubled evolution with rapid expansion, financial struggles, leadership changes, and an eventual sale to NBCUniversal.
+            Both companies are producing more visually sophisticated, ambitious films than ever before, but where Pixar found solid artistic and commercial footing over the course of its signature trilogy, DreamWorks has consistently struggled.
+            And while the new film is a beautiful spectacle, it shows a company that’s still, as always, struggling to find a strong identity of its own.
+        </p>
+    </div>
+
+</div>
+<div property="contains" resource="Comments" typeof="section">
+    <form>
+        <meta property="name" content="Write comment">
+        <div class="form-group" property="contains" resource="comment" typeof="form">
+            <label for="writeComment" class="col-form-label" property="name"><h1>Comment section</h1></label>
+            <input type="text" class="form-control"
+                   property="source" content="writeComment"
+                   id="writeComment" placeholder="Write your comment here">
+        </div>
+
+        <div class="form-group row" property="contains" resource="button" typeof="button">
+            <div class="col-sm-10">
+                <meta property="name" content="Submit">
+                <button type="submit" class="btn btn-primary"
+                        property="source" content="button"
+                        id="button" onclick="event.preventDefault(); window.location = '/'">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>

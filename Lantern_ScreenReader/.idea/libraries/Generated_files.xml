@@ -1,0 +1,57 @@
+<component name="libraryTable">
+  <library name="Generated files" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/background.js" />
+        <item url="file://$PROJECT_DIR$/elements.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/jsonld/node_modules/performance-now/src/performance-now.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/jsonld/node_modules/performance-now/test/performance-now.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/jsonld/node_modules/performance-now/test/scripts.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/jsonld/node_modules/performance-now/test/scripts/delayed-call.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/jsonld/node_modules/performance-now/test/scripts/delayed-require.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/jsonld/node_modules/performance-now/test/scripts/difference.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/jsonld/node_modules/performance-now/test/scripts/initial-value.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/performance-now/src/performance-now.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/performance-now/test/performance-now.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/performance-now/test/scripts.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/performance-now/test/scripts/delayed-call.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/performance-now/test/scripts/delayed-require.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/performance-now/test/scripts/difference.js" />
+        <item url="file://$PROJECT_DIR$/node_modules/performance-now/test/scripts/initial-value.js" />
+        <item url="file://$PROJECT_DIR$/popup.js" />
+        <item url="file://$PROJECT_DIR$/scraper.js" />
+        <item url="file://$PROJECT_DIR$/src/a.js" />
+        <item url="file://$PROJECT_DIR$/src/b.js" />
+        <item url="file://$PROJECT_DIR$/src/background backup.js" />
+        <item url="file://$PROJECT_DIR$/src/background.js" />
+        <item url="file://$PROJECT_DIR$/testTree.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/background.js" />
+      <root url="file://$PROJECT_DIR$/elements.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/jsonld/node_modules/performance-now/src/performance-now.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/jsonld/node_modules/performance-now/test/performance-now.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/jsonld/node_modules/performance-now/test/scripts.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/jsonld/node_modules/performance-now/test/scripts/delayed-call.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/jsonld/node_modules/performance-now/test/scripts/delayed-require.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/jsonld/node_modules/performance-now/test/scripts/difference.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/jsonld/node_modules/performance-now/test/scripts/initial-value.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/performance-now/src/performance-now.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/performance-now/test/performance-now.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/performance-now/test/scripts.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/performance-now/test/scripts/delayed-call.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/performance-now/test/scripts/delayed-require.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/performance-now/test/scripts/difference.js" />
+      <root url="file://$PROJECT_DIR$/node_modules/performance-now/test/scripts/initial-value.js" />
+      <root url="file://$PROJECT_DIR$/popup.js" />
+      <root url="file://$PROJECT_DIR$/scraper.js" />
+      <root url="file://$PROJECT_DIR$/src/a.js" />
+      <root url="file://$PROJECT_DIR$/src/b.js" />
+      <root url="file://$PROJECT_DIR$/src/background backup.js" />
+      <root url="file://$PROJECT_DIR$/src/background.js" />
+      <root url="file://$PROJECT_DIR$/testTree.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

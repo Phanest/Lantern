@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "b.js",
+  "sourceRoot": "",
+  "sources": [
+    "b.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,KAAA,EAAA,IAAA,EAAA;;EAAA,MAAA,GAAS,QAAQ,CAAC,cAAT,CAAwB,gBAAxB;;EACT,IAAA,GAAO,QAAQ,CAAC,cAAT,CAAwB,WAAxB;;EAEP,IAAG,cAAA,IAAU,gBAAb;IACE,KAAA,GAAQ,QAAQ,CAAC,aAAT,CAAuB,QAAvB;IACR,KAAK,CAAC,IAAN,GAAa;IAEb,IAAI,CAAC,UAAU,CAAC,WAAhB,CAA4B,IAA5B;IACA,QAAQ,CAAC,IAAI,CAAC,WAAd,CAA0B,KAA1B;IACA,QAAQ,CAAC,IAAI,CAAC,WAAd,CAA0B,KAA1B;IACA,MAAM,CAAC,UAAU,CAAC,WAAlB,CAA8B,MAA9B,EAPF;;AAHA",
+  "sourcesContent": [
+    "script = document.getElementById('mediaFunctions');\r\nplay = document.getElementById('playMedia');\r\n\r\nif play? and script?\r\n  pause = document.createElement('script')\r\n  pause.text = 'media.pause()'\r\n\r\n  play.parentNode.removeChild(play)\r\n  document.body.appendChild(pause)\r\n  document.body.removeChild(pause)\r\n  script.parentNode.removeChild(script)"
+  ]
+}

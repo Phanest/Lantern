@@ -1,0 +1,94 @@
+
+{% extends 'scaffolding/base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block base %}
+    {% include 'scaffolding/menu.html' %}
+
+    <div class="card bg-light mx-auto " style="margin-top: 10px; width: 80rem;" resource="Tutorial" typeof="section">
+        <h2 class="card-header" property="name">
+            An introduction to Lantern!
+        </h2>
+        <div class="card-body" property="contains" resource="introParagraph" typeof="section">
+            <meta property="name" content="Tutorial">
+
+
+            <h1>Lantern tutorial</h1>
+
+{#            <div property="contains" resource="Intro" typeof="section">#}
+{#                <meta property="name" content="Introduction">#}
+
+                <div property="contains" resource="LanternIntroduction" typeof="text">
+                    <meta property="name" content="Why use lantern">
+
+                    <p property="content">
+                        When we look at any web site on the internet, we are often able to discern the different
+                        groupings that the designers have put there for us (Buttons are parts of menus, hamburger menus
+                        hide the clutter, and the content has a certain look to it), because the site is not just a
+                        mishmash of different elements splattered all over, but has a certain flow to it we are able to have a nice experience on
+                        those sites. Yet for blind people some sites can be a real struggle, even though there is software
+                        that can help these people navigate the internet, its ability is limited, not because of faults in the
+                        software but in the way sites are created.
+                        <br>
+
+                        Current navigation software functions by reading the
+                        text in the elements (which sometimes might prove confusing), or by using a few helpers whose ability
+                        to provide the blind user with a specially tailored experience is quite limited.
+                        This is due to the fact that the elements this software uses are there to tell the machine how to render
+                        the site, they contain structural information which is not intended for humans to read.
+                        Lantern provides a way to enrich these sites and create a special experience for the blind users using RDFa annotations.
+                    </p>
+                </div>
+
+
+                <div property="contains" resource="LanternRDFa" typeof="text">
+                    <meta property="name" content="What is RDFa">
+
+                    <p property="content">
+
+                        RDFa is a way to include machine-readable information that expresses relationships between people, places and other things.
+                        It is used to make search engines aware of useful things (ex. business phone numbers, band tours and basic information on people),
+                        link web pages among each other, and annotate web pages.
+                        <br>
+
+                        The last of which is our intention. There are many vocabularies that describe various things (music and bands, people and others).
+                        Yet we can as simply (should we find the existing vocabularies lacking) create our own. With RDFa we can organize concepts into entities,
+                        so that we can describe whether we are talking about a person, a phone number, a band or something else entirely. Each entity can
+                        contain multiple properties, which can be simple values or relationships with other entities.
+                    </p>
+                </div>
+
+
+                <div property="contains" resource="UsingRDFA" typeof="text">
+                    <meta property="name" content="How we use RDFa">
+
+                    <p property="content">
+
+                        Using RDFa, web page creators can design a special user interface for their blind users. This user interface can be similar to the experience
+                        that able-sighted users get when they visit the site, or it may be a different experience that caters more to the blind users visiting the site.
+                        <br><br>
+
+                        In order to introduce the reader to our framework, we have provided several use cases scattered around the site.
+                        Buttons and forms are introduced in the 'Log in' menu.
+                        Audio and Video elements are introduced in the 'Articles' menu
+                        To reach the menu, head back (by pressing the Ctrl + Up arrow twice) and selecting the menu.
+                    </p>
+                </div>
+{#            </div>#}
+        </div>
+
+        <div class="card-body" property="contains" resource="Conclusion" typeof="text">
+            <meta property="name" content="Conclusion">
+
+            <h1>Conclusion</h1>
+
+            <p property="content">
+                In this section we have introduced lantern, its capabilities, the technology in the background, as well as some examples of what it can do.
+                In the future, new entities and properties in the Lantern vocabulary can add new features and further simplify internet access to people with limited vision.
+                Take the time to experience lantern more by using the rest of our site. Head back and check the menu for more information.
+
+            </p>
+        </div>
+    </div>
+{% endblock %}

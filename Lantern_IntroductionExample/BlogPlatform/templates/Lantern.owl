@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#"
+     xml:base="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#alternatives -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#alternatives">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#text"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#media"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#contains">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#button"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#comment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#form"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#media"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#notification"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#section"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#text"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#replies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#replies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#comment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#comment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#section"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#content -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#content">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#text"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#button"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#comment"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#form"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#media"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#notification"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#section"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#text"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#source -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#source">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#button"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#form"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#media"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#notification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#media"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#user -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#user">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#comment"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#button -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#button"/>
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#comment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#comment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#form -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#form"/>
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#media -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#media"/>
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#notification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#notification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#section -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#section"/>
+    
+
+
+    <!-- http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#text -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#text"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#button"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#comment"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#form"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#media"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#notification"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#section"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/accessible/ontologies/2018/10/Lantern#text"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+

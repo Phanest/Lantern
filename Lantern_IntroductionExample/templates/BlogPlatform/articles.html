@@ -1,0 +1,21 @@
+
+{% extends 'scaffolding/base.html' %}
+
+{% block title %} Articles {% endblock %}
+
+{% block base %}
+    {% include 'scaffolding/menu.html' %}
+
+    <div {% block articlesDiv %}{% endblock %}
+        class="mx-auto" resource="Previews" typeof="section"
+        style="margin-top: 10px; width: 80rem;"
+    >
+        <meta property="name" content="Articles">
+        {% for article in articles %}
+            <div class="card bg-light" style="margin-top: 10px; width: 80rem;" property="contains"
+                 resource="{{ forloop.counter }}" typeof="section">
+                {% include article %}
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

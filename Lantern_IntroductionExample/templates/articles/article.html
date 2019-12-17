@@ -1,0 +1,11 @@
+{% extends 'scaffolding/base.html' %}
+
+{% block title %} Article {% endblock %}
+
+{% block base %}
+    {% include 'scaffolding/menu.html' %}
+
+    <div class="card bg-light mx-auto " style="margin-top: 10px; width: 80rem;" resource="Article" typeof="section">
+        {% include article %}
+    </div>
+{% endblock %}

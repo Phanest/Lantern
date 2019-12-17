@@ -1,0 +1,26 @@
+
+<div {% block ContainsNewsletter %}{% endblock %}
+        resource="newsletter" typeof="section"> {# section: newsletter description: newsletter #}
+    <meta property="name" content="Join our newsletter">
+    <div property="contains" resource="join" typeof="text"> {# text: join desription: text #}
+        <meta property="name" content="Announcement">
+        <p property="content">
+            Do you want to receive news from this site?
+            <br>
+            Sign in below
+        </p>
+    </div>
+    <div property="contains" resource="subscribeForm" typeof="section">
+        <meta property="name" content="Form"> {# form: email descripion: email address #}
+        <div property="contains" resource="email" typeof="form">
+            <meta property="name" content="Email">
+            <input property="source" content="emailForm" type="text" id='emailForm'/>
+        </div>
+        <div property="contains" resource="newsletterButton" typeof="button"> {# button: send description: send #}
+            <meta property="name" content="Subscribe">
+            <button property="source" content="emailButton" onclick="window.location = '#'" type='button' id='emailButton'>
+            Subscribe
+            </button>
+        </div>
+    </div>
+</div>

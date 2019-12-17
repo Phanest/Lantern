@@ -1,0 +1,19 @@
+
+<div {% block mmenu %}{% endblock %}
+        class="navbar navbar-expand-lg navbar-dark bg-dark" resource="menu" typeof="section"> {# section: menu, description: main menu #}
+    <span property="name" content="main menu"></span>
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item" property="contains" resource="home" typeof="button"> {# button: home, description: home #}
+        <meta property="name" content="home">
+        <a class="nav-link" rel="source" href="/">Home</a>
+    </li>
+    <li class="nav-item" property="contains" resource="articles" typeof="button"> {# button: articles, description: articles #}
+        <meta property="name" content="articles">
+        <a class="nav-link" rel="source" href="/articles">Articles</a>
+    </li>
+    <li class="nav-item" property="contains" resource="login" typeof="button"> {# button: login, description: log in #}
+        <meta property="name" content="login">
+        <a class="nav-link" rel="source" href="/login">Log in</a>
+    </li>
+    </ul>
+</div>
