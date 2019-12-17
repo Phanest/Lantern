@@ -1,0 +1,38 @@
+Section
+    -id: String
+    -name: String
+    -contains as children: Button, section, notification, media, form, text, comment as Objects
+
+    -OnAction: returns array of children
+    -addChildren(id): adds children using ids
+
+aText
+    -id
+    -name
+    -content: String or aText, Media as Alternatives
+
+    -OnAction: if contains alternatives return as array, else read text
+    -addChildren
+
+Media
+    -id
+    -name
+    -source: Link
+
+    -OnAction: play source
+    -addChildren: return
+
+Form
+    -id
+    -name
+    -source
+
+    -OnAction: place cursor on field
+    -addChildren
+
+Button
+    -id
+    -name
+    -source
+
+    -onAction: click button
